@@ -20,6 +20,7 @@ from authentication import views
 from authentication.views import *
 from django.views.static import serve
 from django.conf.urls import url
+from django.conf import settings
 
 urlpatterns = [
     path('', views.login, name='login'),
