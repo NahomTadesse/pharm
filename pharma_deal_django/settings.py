@@ -129,11 +129,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'staticfiles'),
+    os.path.join(BASE_DIR, 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorgae'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorgae'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.file'
 
 SESSION_FILE_PATH = os.path.join(BASE_DIR, 'sessions')
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
