@@ -1,1 +1,1 @@
-web: gunicorn CCMS.wsgi
+web: gunicorn pharma_deal_django.wsgi 
