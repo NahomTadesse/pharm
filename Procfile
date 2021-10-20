@@ -1,1 +1,1 @@
-web: gunicorn pharma_deal_django.wsgi 
+web: gunicorn pharma_deal_django.wsgi --log-file -
