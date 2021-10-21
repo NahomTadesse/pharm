@@ -149,13 +149,13 @@ def inventory(request):
             
             user_id = request.session['user_id']
             
-            try:
-                user_inventory = firebase.database.child('Products').order_by_child('user_id').equal_to('%s'%user_id).get().val()
-                print(user_inventory)
+            # try:
+            user_inventory = firebase.database.child('Products').order_by_child('user_id').equal_to('%s'%user_id).get().val()
+            print(user_inventory)
 
-                return render(request, 'inventory.html', {'user_inventory':user_inventory})
-            except:
-                return redirect('/products/create')
+            return render(request, 'inventory.html', {'user_inventory':user_inventory})
+            # except:
+        return redirect('/products/create')
         return redirect('/products/browse')
     return redirect('/authentication/')
 
