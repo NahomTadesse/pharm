@@ -44,7 +44,7 @@ def showpro(request):
         privilage = x
         
 
-        return render(request , 'Profile.htm', {'i': img_url, 'n' : name , 'priv': privilage})
+        return render(request , 'Profile.html', {'i': img_url, 'n' : name , 'priv': privilage})
     except Exception as e: 
         print (e)
         return render(request, 'unauthorized.html')
