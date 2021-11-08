@@ -157,7 +157,11 @@
 .create-form .formcontrol{
     padding: 20px 0;
 }
-
+.create-form .formcontrol-description{
+    display:block;
+    width:50%;
+    height: 8em;
+}
 .formgroup{
     border:10px black;
 }

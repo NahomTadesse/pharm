@@ -8,7 +8,7 @@ categories = [
 
 class ProductCreateForm(forms.Form):
     product_name = forms.CharField(label='Product Name', widget=forms.TextInput(attrs={'class':'formcontrol'}))
-    description = forms.CharField(label= 'Description', widget=forms.Textarea(attrs={"rows":5,"cols":20,'class':'formcontrol'}))
+    description = forms.CharField(label= 'Description', widget=forms.Textarea(attrs={"rows":5,"cols":20,'class':'formcontrol-description'}))
     brand = forms.CharField(label= 'Brand', widget=forms.TextInput(attrs={'class':'formcontrol'}))
     manufacturing_company = forms.CharField(label= 'Manufacturing company', widget=forms.TextInput(attrs={'class':'formcontrol'}))
     form_of_preparation = forms.CharField(label= 'Form of preparation', widget=forms.TextInput(attrs={'class':'formcontrol'}))
