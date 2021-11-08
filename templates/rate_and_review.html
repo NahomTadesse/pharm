@@ -85,27 +85,27 @@
           <div>
             <img src="{{img_url}}" width="200" height="200">
           <div>
-          <p>Product name:  {{product_name}}</p>
-          <p>Price:  {{cost}}</p>
+          <p><b>Product name:</b>  {{product_name}}</p>
+          <p><b>Price:<b>  {{cost}}</p>
           <div class='form-group'>
               <form action="{%url 'review_and_rate'%}?url={{img_url | urlencode}}" method='POST'>
                   {% csrf_token %}
               <input type="hidden" name="pharma_id" value="{{pharma_id}}">
               <input type="hidden" name="transaction_status" value="{{status}}">
               <input type="hidden" name="product_id" value="{{product_id}}">
-              <label class="form-label">Name</label>
+              <label class="form-label"><b>Name</b></label>
               <input type="text" placeholder="Please enter your name" class='form-control' name="user_name" style="width: 300px;height:2em;">
                 
                 
               <br>
               <br>
-                <label class="form-label">Review</label>
+                <label class="form-label"><b>Review</b></label>
               <br>
                 <textarea name="review_and_rate" placeholder="Please enter feedback" class='form-control' rows="5" style="width: 380px;"></textarea>
               <!-- <input type="text" style='height:80px;width:280px;align-content: center;' name="review_and_rate">-->
               <br>
               <br>
-              <label class='form-label' for='rating'>Rating</label>
+              <label class='form-label' for='rating'><b>Rating</b></label>
               <br>
               <div class="stars">
                 <input class="star star-5" id="star-5" type="radio" name='rating' value="5"/>
