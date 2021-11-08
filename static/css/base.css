@@ -44,7 +44,7 @@
   a.active,a:hover{
     background: rgb(12, 235, 12);
     transition: .5s;
-    text-emphasis: bold;
+    
   }
   .checkbtn{
     font-size: 30px;
