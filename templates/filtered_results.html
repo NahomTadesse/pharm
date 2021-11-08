@@ -48,13 +48,13 @@
                 <a href="{% url 'single_product' search_result.product_id %}">
                   <p><img src="{{search_result.product_image}}" style="height: 200px; width:200px;"></p>
                 </a>
-                <p> Name: {{search_result.product_name}} </p>
+                <p> <b>Name:</b> {{search_result.product_name}} </p>
                 <!--<p> Description: {{search_result.description}} </p>-->
-                <p>Brand: {{search_result.brand}}</p>
+                <p><b>Brand:</b> {{search_result.brand}}</p>
                 <!-- <p>Manufacturing company: {{search_result.manufacturing_company}}</p>
                 <p>Form of preparation: {{search_result.form_of_preparation}}</p>-->
-                <p> Category: {{search_result.category.capitalize}} </p>
-                <p> Price: {{search_result.price}} </p>
+                <p> <b>Category</b>: {{search_result.category.capitalize}} </p>
+                <p> <b>Price:</b> {{search_result.price}} </p>
                 <!--<p> Manufacturing date: {{search_result.manufacturing_date}} </p>
                 <p> Expiry date: {{search_result.expiry_date}}</p>-->
                 {% if request.session.privilege == 'pharmacies'%}

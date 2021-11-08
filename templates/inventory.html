@@ -28,15 +28,15 @@
               <div class="content content-1">
                 <img class="card-img-top" src="{{product.product_image}}" style="height:200px;" >
                 
-                  <p>Name: {{product.product_name}} </p>
-                  <p>Description: {{product.description}} </p>
-                  <p>Brand: {{product.brand}}</p>
-                  <p>Manufacturing company: {{product.manufacturing_company}}</p>
-                  <p>Form of preparation: {{product.form_of_preparation}}</p>
-                  <p> Category: {{product.category}} </p>
-                  <p> Price: {{product.price}} </p>
-                  <p> Manufacturing date: {{product.manufacturing_date}} </p>
-                  <p> Expiry date: {{product.expiry_date}}</p>
+                  <p><b>Name:</b> {{product.product_name}} </p>
+                  <p><b>Description:</b> {{product.description}} </p>
+                  <p><b>Brand:</b> {{product.brand}}</p>
+                  <p><b>Manufacturing company:</b> {{product.manufacturing_company}}</p>
+                  <p><b>Form of preparation:</b> {{product.form_of_preparation}}</p>
+                  <p><b>Category:</b> {{product.category}} </p>
+                  <p><b>Price:</b> {{product.price}} </p>
+                  <p><b>Manufacturing date:</b> {{product.manufacturing_date}} </p>
+                  <p><b>Expiry date:</b> {{product.expiry_date}}</p>
                   <a href="{% url 'update' product.product_id %}?owner_id={{product.user_id}}"><button class="updatebtn" type="submit" form = "update_form"><i class="fa fa-wrench" aria-hidden="true"></i> Update</button></a>
                   <a href="{% url 'delete' product.product_id %}?owner_id={{product.user_id}}"><button class="deletebtn" type="submit" form = "delete_form"><i class="fa fa-trash" aria-hidden="true"></i> Delete</button></a>
                   <!--<form action="{% url 'update' product.product_id %}" method="POST" enctype="multipart/form-data" id="update_form">
