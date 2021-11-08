@@ -1,9 +1,9 @@
 {%extends "base.html"%}
 
 {%block content%}
-    <div class="cards" style="width:max-content;">
+    <div class="cards" style="margin-left : 33%;">
           <div class="services">
-            <div class="content content-1">
+            <div class="content content-1" style="padding : 1em 2em;">
                 {% for pro in product.values %}
                 <img class="card-img-top" src="{{pro.product_image}}" style="height:200px;width: 200px;align-self: center;" >
                 <div class="card-body"> 
@@ -34,9 +34,9 @@
             </div>
             </div>            
             <br>
-                <h2 class="reviews">Reviews</h2>
+                <h2 class="reviews" style="margin-left : 33%;">Reviews</h2>
             <br>
-            <div class="cards">
+            <div class="cards" style="margin-left : 33%;">
                 <div class="services">
                     {% for review in reviews.values %}
                     
