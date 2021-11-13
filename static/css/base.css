@@ -405,7 +405,12 @@ footer{
   width: max-content;
   height: max-content;
   border: none;
-  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+
+.wrapper .social_media ul li button :hover{
+border-radius: 6px;
+  background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 }
 .wrapper .social_media ul li input{
   color :#fff;
@@ -415,6 +420,7 @@ footer{
   width: max-content;
   border: none;
   background: linear-gradient(to right,#01a9ac,#01dbdf);
+  
 }
 .reviews{
   display: block;
