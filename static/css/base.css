@@ -310,7 +310,7 @@ footer{
 
 .wrapper .left{
   width: 35%;
-  background: linear-gradient(to right,#03925e,#52df01);
+  background: #03925e;
   padding: 30px 25px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
