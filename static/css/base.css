@@ -335,7 +335,7 @@ footer{
 
 .wrapper .right{
   width: 65%;
-  background: rgb(5, 44, 2);
+  background:#053742;
   padding: 30px 25px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -351,7 +351,7 @@ footer{
   margin-bottom: 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid #e0e0e0;
-  color: #353c4e;
+  color:#0793ff;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -398,7 +398,14 @@ footer{
   line-height: 45px;
   padding: 5px 20px;
 }
+.wrapper .social_media ul li:hover{
 
+  font-size: 20%;
+
+}
+.wrapper .social_media ul li button:hover{
+  font-size: 20%;
+}
 .wrapper .social_media ul li button{
   color :#fff;
   display: flex;
