@@ -400,13 +400,11 @@ footer{
 }
 .wrapper .social_media ul li:hover{
 
-  font-size: 80%;
-  border-radius: 8px;
+  
+  border-radius: 9px;
 
 }
-.wrapper .social_media ul li button:hover{
-  font-size: 20%;
-}
+
 .wrapper .social_media ul li button{
   color :#fff;
   display: flex;

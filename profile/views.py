@@ -40,11 +40,13 @@ def showpro(request):
         img_url = firebase.database.child(x).child(user_id).child('url').get(user['idToken']).val()
         
         name = firebase.database.child(x).child(user_id).child('name').get(user['idToken']).val()
+        phone_no = firebase.database.child(x).child(user_id).child('phone_number').get(user['idToken']).val()
+        email = firebase.database.child(x).child(user_id).child('email').get(user['idToken']).val()
 
         privilage = x
         
 
-        return render(request , 'Profile.html', {'i': img_url, 'n' : name , 'priv': privilage})
+        return render(request , 'Profile.html', {'i': img_url, 'n' : name ,'pno': phone_no,'email': email , 'priv': privilage})
     except Exception as e: 
         print (e)
         return render(request, 'unauthorized.html')
