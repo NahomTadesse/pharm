@@ -400,7 +400,8 @@ footer{
 }
 .wrapper .social_media ul li:hover{
 
-  font-size: 20%;
+  font-size: 80%;
+  border-radius: 8px;
 
 }
 .wrapper .social_media ul li button:hover{
