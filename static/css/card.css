@@ -192,3 +192,18 @@
     }
 }
 
+#id_product_name,#id_brand,#id_manufacturing_company,#id_form_of_preparation,#id_manufacturing_date,#id_expiry_date,#id_price,#id_catagory {
+    display: block;
+    width: 50%;
+    height: 2em;
+    padding: 20px 0;
+}
+#id_description{
+    display:block;
+    width:50%;
+    height: 8em;
+}
+.updatebtndiv{
+    margin-left: 10%;
+}
+
